@@ -6,6 +6,6 @@ class RidesController < ApplicationController
     session[:error] = ride.take_ride
     redirect_to user_path(current_user)
   end
-end
+
 
 end
