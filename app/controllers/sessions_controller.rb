@@ -5,7 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
-    binding.pry
+    
     if logged_in?
       redirect_to user_path(session[:user_id])
     else
