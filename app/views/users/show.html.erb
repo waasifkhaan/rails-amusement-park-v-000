@@ -1,4 +1,6 @@
-
+<% if session[:error] %> 
+<%= session[:error] %>
+<% end %>
 Name:<strong> <%= @user.name %><br></strong>
 Mood: <%= @user.nausea %> <br>
 
