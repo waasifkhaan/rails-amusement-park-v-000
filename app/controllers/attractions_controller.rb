@@ -19,6 +19,9 @@ class AttractionsController < ApplicationController
 
   end
 
+  def edit 
+  end 
+
   private
 
   def attraction_params
