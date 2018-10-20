@@ -26,7 +26,7 @@
           <a class="navbar-brand" href="<%= user_url(current_user) %>"/><%= current_user.name %>'s Profile ADMIN</a>
           <% else %>
           <a class="navbar-brand" href="<%= user_url(current_user) %>"/><%= current_user.name %>'s Profile</a>
-          <% end %>   
+          <% end %>
         <% else %>
           <a class="navbar-brand" href="<%= new_user_url  %>"/>Sign Up</a>
           <a class="navbar-brand" href="<%= signin_url  %>"/>LogIn</a>
