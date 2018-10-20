@@ -19,8 +19,8 @@ class AttractionsController < ApplicationController
 
   end
 
-  def edit 
-  end 
+  def edit
+  end
 
   private
 
