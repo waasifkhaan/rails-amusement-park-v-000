@@ -11,7 +11,7 @@ class Ride < ApplicationRecord
     elsif self.user.height < self.attraction.min_height
       "Sorry. You are not tall enough to ride the Roller Coaster."
 
-    else self.user.tickets > self.attraction.tickets && self.user.height > self.attraction.min_height
+    else 
       self.user.update(tickets: self.user.tickets - self.attraction.tickets , happiness: self.user.happiness + self.attraction.happiness_rating,
       nausea: self.user.nausea + self.attraction.nausea_rating )
 
