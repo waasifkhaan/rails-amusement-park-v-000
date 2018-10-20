@@ -4,8 +4,9 @@ class RidesController < ApplicationController
     binding.pry
     ride = Ride.new
     if ride.take_ride
-      
+
 
   end
+end 
 
 end
