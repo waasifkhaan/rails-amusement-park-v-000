@@ -1,8 +1,10 @@
 class RidesController < ApplicationController
 
   def create
+    binding.pry
     ride = Ride.new
-    ride.take_ride
+    if ride.take_ride
+      
 
   end
 
