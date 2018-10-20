@@ -25,6 +25,7 @@
         <% if logged_in? %>
           <a class="navbar-brand" href="<%= logout_path  %>"/>Logout</a>
           <a class="navbar-brand" href="<%= user_url(current_user) %>"/><%= current_user.name %>'s Profile</a>
+            <p>ADMIN</p>
         <% else %>
           <a class="navbar-brand" href="<%= new_user_url  %>"/>Sign Up</a>
           <a class="navbar-brand" href="<%= signin_url  %>"/>LogIn</a>
