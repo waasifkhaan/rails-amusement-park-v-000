@@ -14,7 +14,7 @@ class AttractionsController < ApplicationController
 
 
   def create
-    attraction = Attaction(attraction_params)
+    attraction = Attaction.new(attraction_params)
     binding.pry
   end
 
