@@ -3,4 +3,4 @@ Nausea Rating: <%=  @attraction.nausea_rating %><br>
 Happiness Rating: <%=  @attraction.happiness_rating %><br>
 Minimum Height requirement: <%=  @attraction.min_height %><br><br>
 
-<%= button_to "Go on this ride", rides_path(:attraction => @attraction)  %>
+<%= button_to "Go on this ride", rides_path(:attraction_id => @attraction)  %>
