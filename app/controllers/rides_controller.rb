@@ -1,7 +1,8 @@
 class RidesController < ApplicationController
 
   def create
-    
-  end 
-  
+    @ride = Ride.new
+
+  end
+
 end
