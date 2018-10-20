@@ -13,8 +13,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    binding.pry
+    binding.prye
     @user = User.new(user_params)
+    @user.admin = params[:admin]
     if @user.save
       binding.pry
       session[:user_id] = @user.id
