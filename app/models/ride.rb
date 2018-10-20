@@ -16,7 +16,7 @@ class Ride < ApplicationRecord
       self.user.update(tickets: self.user.tickets - self.attraction.tickets , happiness: self.user.happiness + self.attraction.happiness_rating,
       nausea: self.user.nausea + self.attraction.nausea_rating )
 
-      self.user.mood
+    
       "Thanks for riding the #{self.attraction.name}"
     end
 
