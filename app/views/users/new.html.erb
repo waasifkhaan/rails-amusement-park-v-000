@@ -10,7 +10,7 @@
 <%= f.label :tickets %>
 <%= f.number_field :tickets %>
 <%= f.label :admin %>
-<%= fields_for @user.admin do |user| %>
+<%= fields_for :user do |user| %>
   Check box if you are a theme park owner<%= user.check_box :admin , id: 'user_admin' %>
 <% end %>
 <%= f.label :password %>
