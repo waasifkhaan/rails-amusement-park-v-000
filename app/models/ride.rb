@@ -12,7 +12,8 @@ class Ride < ApplicationRecord
       "Sorry. You are not tall enough to ride the Roller Coaster."
 
     else
-      self.user.update(tickets: self.user.tickets - self.attraction.tickets , happiness: self.user.happiness + self.attraction.happiness_rating,
+      tk = self.user.tickets - self.attraction.tickets 
+      self.user.update(tickets: , happiness: self.user.happiness + self.attraction.happiness_rating,
       nausea: self.user.nausea + self.attraction.nausea_rating )
 
     end
