@@ -20,7 +20,11 @@ class AttractionsController < ApplicationController
   end
 
   def edit
-  end
+  end 
+
+  def update 
+    binding.pry 
+  end 
 
   private
 
