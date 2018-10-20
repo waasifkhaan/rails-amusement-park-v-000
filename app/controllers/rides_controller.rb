@@ -1,7 +1,7 @@
 class RidesController < ApplicationController
 
-  def new 
-  end 
+  def new
+  end
 
   def create
     binding.pry
