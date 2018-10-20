@@ -5,6 +5,7 @@ class SessionsController < ApplicationController
   end
 
   def create
+    params
     if logged_in?
       redirect_to user_path(session[:user_id])
     else
