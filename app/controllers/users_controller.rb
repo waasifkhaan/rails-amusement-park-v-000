@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    
+
     @user = User.new(user_params)
     @user.admin = params[:admin]
     if @user.save
