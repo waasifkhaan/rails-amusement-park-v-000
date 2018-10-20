@@ -8,8 +8,8 @@ class AttractionsController < ApplicationController
     @attraction = Attraction.find(params[:id])
   end
 
-  def new 
-  end 
+  def new
+  end
 
 
   def create
