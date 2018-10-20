@@ -9,7 +9,8 @@
 <%= f.number_field :nausea %>
 <%= f.label :tickets %>
 <%= f.number_field :tickets %>
-<%= fields_for :admin do |user| %>
+<%= f.label :user_admin %>
+<%= fields_for :user_admin do |user| %>
   Check box if you are a theme park owner<%= user.check_box :admin %>
 <% end %>
 <%= f.label :password %>
