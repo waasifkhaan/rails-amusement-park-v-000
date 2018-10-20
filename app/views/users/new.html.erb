@@ -9,6 +9,9 @@
 <%= f.number_field :nausea %>
 <%= f.label :tickets %>
 <%= f.number_field :tickets %>
+<%= fields_for :person do |permission_fields| %>
+  Check box if you are a theme park owner<%= permission_fields.check_box :admin %>
+<% end %>
 <%= f.label :password %>
 <%= f.password_field :password %>
 <%= f.submit %>
