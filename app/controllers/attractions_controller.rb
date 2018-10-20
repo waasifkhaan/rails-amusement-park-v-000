@@ -7,4 +7,10 @@ class AttractionsController < ApplicationController
   def show
     @attraction = Attraction.find(params[:id])
   end
+
+  def new 
+  end 
+
+  def create 
+  end 
 end
