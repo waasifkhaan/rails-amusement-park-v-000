@@ -16,4 +16,11 @@ class AttractionsController < ApplicationController
   def create
     binding.pry
   end
+
+  private
+
+  def user_params
+    params.require(:attraction).permit(:name, :min_height, :happiness_rating, :nausea_rating, :tickets)
+  end
+
 end
