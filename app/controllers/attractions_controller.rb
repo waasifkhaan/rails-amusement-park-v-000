@@ -14,12 +14,13 @@ class AttractionsController < ApplicationController
 
 
   def create
+    attraction = Attaction(attraction_params)
     binding.pry
   end
 
   private
 
-  def user_params
+  def attraction_params
     params.require(:attraction).permit(:name, :min_height, :happiness_rating, :nausea_rating, :tickets)
   end
 
