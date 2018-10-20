@@ -2,9 +2,9 @@
 <p style="color:red;"><%= session[:error] %></p>
 <% end %>
 Name:<strong> <%= @user.name %><br></strong>
-Mood: <%= @user.nausea%> <br>
-
-happy: <%= @user.happiness %><br>
+<% if !current_user.admin %>
+Mood: <%= @user.mood%> <br>
+<% end %>
 
 
 Height: <%= @user.height %><br>
